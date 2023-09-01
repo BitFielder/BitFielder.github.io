@@ -147,7 +147,7 @@ function changeIdToIPv6() {
   };
 
   request.onerror = function () {
-    document.getElementById("ipv6deny").textContent = "IPv6 주소를 찾을 수 없습니다. API 서버에 문제가 있습니다.";
+    document.getElementById("ipv6deny").textContent = "IPv6 주소를 찾을 수 없습니다. IPv6주소가 존재하지 않습니다.";
     ipv6allow.style.display = 'none';
     ipv6deny.style.display = 'block';
   };
